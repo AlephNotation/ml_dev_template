@@ -30,7 +30,7 @@ RUN pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio===0.7.2 -
     && pip install --upgrade jax jaxlib==0.1.57+cuda110 -f https://storage.googleapis.com/jax-releases/jax_releases.html \
     && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir requiremnts-tests
+RUN mkdir requirements-tests
 COPY test_pytorch.py requirements-tests/.
 
 
